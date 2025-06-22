@@ -1,0 +1,129 @@
+/**
+File: style.css
+GUI Assignment:  Homework 4 part 2
+Sarah Toth, UML C.S., Sarah_Toth@student.uml.edu
+Copyright (c) 2025 by Sarah.  All rights reserved.
+Updated by ST on June 21, 2025 at 11:44 PM
+**/
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f9f9f9;
+}
+
+/* Main page title */
+h1 {
+    text-align: center;
+}
+
+/* Center form and add spacing */
+form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Group label + input + error */
+.input-group {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 15px 15px 0;
+    min-width: 160px;
+    text-align: left;
+}
+
+/* Label styling */
+.input-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+/* Input styling */
+.input-group input {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+/* Submit button */
+button {
+    padding: 5px 15px;
+}
+
+/* Error message below form */
+.error {
+    color: red;
+    font-weight: normal;
+    font-size: 0.85em;
+    margin-top: 2px;
+    min-height: 18px; /* reserve space so layout doesn't jump */
+    display: block;
+}
+
+/* Container scrolling and responsiveness */
+#tableContainer {
+    overflow-x: auto;
+    max-width: 100%;
+    text-align: center;
+}
+
+/* Table with borders and minimum width */
+table {
+    border-collapse: collapse;
+    margin: auto;
+    min-width: 300px;
+}
+
+/* Header and data cells */
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Top header row */
+thead th {
+    background-color: #ddd;
+    position: sticky;
+    top: 0;
+}
+
+/* Left header column */
+tbody th {
+    background-color: #eee;
+    position: sticky;
+    left: 0;
+}
+
+/* Alternate cell background color */
+tbody td:nth-child(even) {
+    background-color: #f0f0f0;
+}
+
+/* Slider elements styled to take full width with some top margin */
+.slider {
+    width: 100%;
+    margin-top: 4px;
+}
+
+/* Margin above the tabs container */
+#tabs {
+    margin-top: 20px;
+}
+
+/* Padding inside each tab's content area */
+.tab-content {
+    padding: 10px;
+}
+
+/* Cursor pointer on close icon to indicate clickable */
+.ui-icon-close {
+    cursor: pointer;
+}
+
+/* Wrapper div for tables to enable horizontal scrolling when table is wider than container */
+.table-wrapper {
+    overflow-x: auto;
+    max-width: 100%;
+}
